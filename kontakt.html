@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - In Omnia Paratus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>In Omnia Paratus</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">O nás</a></li>
+                <li><a href="treninky.html">Tréninky</a></li>
+                <li class="dropdown">
+                    <a href="#">Fotogalerie &#x25BC;</a>
+                    <ul class="dropdown-content">
+                        <li class="sub-dropdown">
+                            <a href="#">2023 &#x25B6;</a>
+                            <ul class="sub-dropdown-content">
+                                <li><a href="treninky_2023.html">Tréninky </a></li>
+                                <li><a href="Navsi2023.html">Návsí </a></li>
+                                <li><a href="Chropyne2023.html">Chropyně</a></li>
+                                <li><a href="Adamov.html">Nový hrad</a></li>
+                                <li><a href="Den_studentu.html">Den studentů</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-dropdown">
+                            <a href="#">2024 &#x25B6;</a>
+                            <ul class="sub-dropdown-content">
+                                <li><a href="Treninky_2024.html">Tréninky</a></li>
+                                <li><a href="Cimburk2024.html">Cimburk</a></li>
+                                <li><a href="Navsi2024.html">Návsí</a></li>
+                                <li><a href="Chropyne2024.html">Chropyně</a></li>
+                                <li><a href="Tovacov2024.html">Tovačov</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-dropdown">
+                            <a href="#">2025 &#x25B6;</a>
+                            <ul class="sub-dropdown-content">
+
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Akce &#x25BC;</a>
+                    <ul class="dropdown-content">
+                        <li><a href="uplynule.html">Uplynulé</a></li>
+                        <li><a href="budouci.html">Nadcházející</a></li>
+                    </ul>
+                </li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="kontakt">
+        <h2>Kontakt</h2>
+        <p>Chcete se připojit k naší skupině nebo máte dotazy? Kontaktujte nás pomocí níže uvedených údajů:</p>
+        <ul>
+            <li>Email: info@inomniaparatus.cz</li>
+            <li>Telefon: +420 605 308 067</li>
+        </ul> 
+
+        <div class="social-media">
+            <a href="https://www.facebook.com/profile.php?id=100094127193554" target="_blank">
+                <img src="Images/ikony-images/facebook.png" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://www.instagram.com/in__omnia__paratus_/" target="_blank">
+                <img src="Images/ikony-images/instagram.png" alt="Instagram" class="social-icon">
+            </a>
+        </div>
+    </section>
+    <section>
+        <h2>Kontakt</h2>
+        <form action="mailto:vas-email@example.com" method="post" enctype="text/plain">
+            <label for="fname">Jméno:</label>
+            <input type="text" id="fname" name="fname" required>
+            <label for="lname">Příjmení:</label>
+            <input type="text" id="lname" name="lname" required>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="E-mail musí obsahovat zavináč (@) a doménu (.cz nebo .com)">
+            <label for="message">Zpráva:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <input type="submit" value="Odeslat">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 In Omnia Paratus - Šermířská Skupina</p>
+    </footer>
+</body>
+</html>
+

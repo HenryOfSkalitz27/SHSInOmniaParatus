@@ -1,0 +1,386 @@
+/* Import středověkého fontu */
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'MedievalSharp', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4; 
+    color: #333;
+    background: url('wp2021760.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-size: 1.0em; /* Zvýšení základní velikosti písma */
+    margin-top: 120px;
+}
+
+/*body::before,
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 500px; /* Změňte velikost dle potřeby */
+/*    background-size: 500px; /* Změňte velikost dle potřeby */
+/*    opacity: 0.3; /* Průhlednost loga */
+/*    pointer-events: none; /* Logo nebude ovlivňovat interakce uživatele */
+/*}
+/*
+body::before {
+    background: url('erb.png') no-repeat left center;
+    left: 0;
+}
+
+body::after {
+    background: url('erb.png') no-repeat right center;
+    right: 0;
+}*/
+
+header {
+    background-color: rgba(34, 34, 34, 0.8);
+    color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6347cc;
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown-content:hover {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(34, 34, 34, 0.9);
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 0;
+    list-style: none;
+}
+
+.dropdown-content li {
+    margin: 0;
+}
+
+.dropdown-content li a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 1em;
+}
+
+.dropdown-content li a:hover {
+    background-color: #383332cc;
+}
+
+.intro {
+    position: relative;
+    margin-top: 20px; /* Adjust this value to prevent content from being hidden behind the fixed header */
+}
+
+.intro-image {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-size: 1.1em; /* Zvýšení velikosti písma v sekcích */
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: rgba(34, 34, 34, 0.8);
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .dropdown-content {
+        position: static;
+        margin-top: 0;
+    }
+}
+
+.social-media {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+.training-columns {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.training-columns .column {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    box-sizing: border-box;
+}
+
+.training-columns .column h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+.training-columns .column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.training-columns .column ul li {
+    text-align: center;
+    padding: 5px 0;
+    font-size: 1.1em;
+}
+
+#akce {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.event {
+    flex: 1 0 300px; /* Každá akce bude mít minimální šířku 300px */
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Zabraňuje přetečení obsahu */
+}
+
+.event a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+}
+
+.event img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.event-content {
+    padding: 20px;
+}
+
+.event-content h3 {
+    margin-top: 0;
+}
+
+.event-content p {
+    margin-bottom: 0;
+    color: #666;
+}
+
+/*Formulář*/
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+form label {
+    font-size: 1.2em;
+}
+
+form input, form textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form input[type="submit"] {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #ff6347;
+}
+
+form input:invalid:required {
+    border: 2px solid red;
+}
+
+form input:invalid + span::before {
+    content: "❌ ";
+    color: red;
+    font-size: 1.2em;
+}
+
+form input:invalid + span {
+    visibility: visible;
+}
+
+form span {
+    visibility: hidden;
+    position: absolute;
+    right: 10px;
+    top: 36px;
+    font-size: 0.9em;
+    color: red;
+}
+
+.sub-dropdown-content {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: rgba(34, 34, 34, 0.9);
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 0;
+    list-style: none;
+}
+
+.sub-dropdown:hover .sub-dropdown-content {
+    display: block;
+}
+
+.sub-dropdown-content li a {
+    padding: 10px 14px;
+    font-size: 0.95em;
+}
+
+.sub-dropdown-content li a:hover {
+    background-color: #555;
+}
+
+/* Dropdown - základní styly */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(34, 34, 34, 0.9);
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 0;
+    list-style: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content li {
+    position: relative;
+}
+
+.dropdown-content li a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 1em;
+}
+
+.dropdown-content li a:hover {
+    background-color: #383332cc;
+}
